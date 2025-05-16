@@ -1,5 +1,5 @@
 //Hello World, Introducing Strings! (Part 4 of 19) | C# for Beginners
-/
+/*
 using System;
 
 namespace HelloWorld
@@ -18,6 +18,30 @@ namespace HelloWorld
         
     }
 }
-/
+*/
 
-//
+//The Basics of Strings! (Part 5 of 19) | C# for Beginners
+/*
+using System;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          Console.WriteLine("Hello David");
+          string firstfriend="   John  ";
+          string secondfriend="  Scott  ";
+         //trimming the space  
+          firstfriend=firstfriend.Trim();
+          //you can also trim like this
+          Console.WriteLine($"Hello {firstfriend} and {secondfriend.Trim()}");
+          
+          
+        }
+
+        
+    }
+}
+*/
