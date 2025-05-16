@@ -45,3 +45,12 @@ namespace HelloWorld
     }
 }
 */
+
+//Searching Strings (Part 6 of 19) | C# for Beginners
+/*
+//we have other functions to search through string like
+//.Contain()
+//we also have .ToUpper() and .ToLower()
+7
+
+*/
