@@ -234,8 +234,63 @@ namespace HelloWorld
 */
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-//
+//Branching, While loops (Part 10 of 19) | C# for Beginners
 /*
+using System;
 
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+        int counter=0;
+          Console.WriteLine("While loop");
+          while(counter<5)
+              {
+               Console.WriteLine(counter);
+               counter++;
+              }
+          //The above code will print 0,1,2 3,4
+          //another way of printing and even omitting the '0'
+          //assuming counter=0
+          counter=0;//retuning counter back to 0
+          Console.WriteLine("\n");//to start printing on another line
+          Console.WriteLine("do-While loop");
+          do
+              {
+              counter++;
+              Console.WriteLine(counter);
+              }
+          while(counter<5);
+        
+        }
+    }    
+}
+
+
+*/
+--------------------------------------------------------------------------------------------------------------------------------------------
+//For Loops (Part 11 of 19) | C# for Beginners
+/*
+using System;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          for(int rows=1;rows<11;rows++)
+              {
+                for(char column='a';column<'k';column++)  
+                  {
+                    Console.WriteLine($"row {rows} column {column}");
+                  }
+              }
+        
+        }
+    }    
+}
 
 */
