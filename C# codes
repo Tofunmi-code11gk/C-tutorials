@@ -294,3 +294,62 @@ namespace HelloWorld
 }
 
 */
+--------------------------------------------------------------------------------------------------------------------------------------------
+List<T> and Collections of Data (Part 12 of 19) | C# for Beginners
+/*
+using System;
+using System. Collections.Generic;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          var names=new List<string>{"Scott","Anna","David"};
+          names.Add("Luke");
+          names.Add("JOhn");
+          names.Remove("David");
+          foreach(var name in names)
+            {
+              Console.WriteLine($"\n{name.ToUpper()}");
+            }
+    }    
+}
+}
+
+*/
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+//Arrays, Lists, Indexing, and Foreach (Part 13 of 19) | C# for Beginners
+/*
+using System;
+using System. Collections.Generic;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          var names=new List<string>{"Scott","Anna","David"};
+         
+          names.Add("Luke");
+          names.Add("JOhn");
+          names.Add("Paul");
+          names.Add("Jake");
+          names.Add("Russ");
+        
+          
+          foreach(var name in names)
+            {
+              Console.WriteLine($"\n{name.ToUpper()}");
+            }
+          
+    }    
+}
+}
+
+
+*/
