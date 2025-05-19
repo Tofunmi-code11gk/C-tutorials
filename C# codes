@@ -20,6 +20,7 @@ namespace HelloWorld
 }
 */
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 //The Basics of Strings! (Part 5 of 19) | C# for Beginners
 /*
 using System;
@@ -46,11 +47,145 @@ namespace HelloWorld
 }
 */
 
+--------------------------------------------------------------------------------------------------------------------------------------------
 //Searching Strings (Part 6 of 19) | C# for Beginners
 /*
 //we have other functions to search through string like
 //.Contain()
 //we also have .ToUpper() and .ToLower()
 
+
+*/
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//Numbers, Integers, and Math (Part 7 of 19) | C# for Beginners
+/*
+using System;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          // int can only store 32 bits
+          /*
+          because the number is too large the output will show error
+          int a=100000000000000000;
+          
+          
+          Another error can be you have stored two large numbers
+          but let's say you perform an addition operation or mulitplication 
+          it will return a random number indicating the result of the operation
+          is out of range
+          
+          
+          */
+          
+         /*int a=100000000000000000;
+          int b=12;
+         int c=6;
+         */
+         /*
+         int a=1000000000;
+         int b=1000000000;
+         int c=1000000000;
+         int sum=a+b+c;
+         Console.WriteLine(sum);*/
+         
+         
+         /* runnig the code above we have an output of
+         -1294967296
+         when normally it's meant to be 3000000000
+         this is because where the result of the operation is being stored is of 
+         type int
+         
+         a way to solve it is you can use another type "long"
+         they are ways to covert the code above
+         
+         1.
+          long a=1000000000;
+          long b=1000000000;
+          long c=1000000000;
+          long sum=a+b+c;
+          Console.WriteLine(sum);
+         */
+         //2.
+         //you can alos add this function checked()which checks if the number results in an overflow
+         int a=1000000000;
+         int b=1000000000;
+         int c=1000000000;
+         int d=1000000000;
+         int e=2000000000;
+         long sum=(long)a+(long)b+(long)c;
+         long sum2=checked(d+e);
+         Console.WriteLine(sum);
+         //the line of code below should give an error that the code resulted in an overflow
+      
+         Console.WriteLine(sum2);
+ 
+          
+        }
+
+        
+    }
+}
+
+*/
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+//Numbers, Precision, Casting, Doubles, and More (Part 8 of 19) | C# for Beginners
+/*
+/*
+we have other type of int that can store huge numbers
+bigint.
+*/
+using System;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          /*
+           int a=10.2;
+           int b=12.8;
+           // the error "convert type `double' to `int'"
+          
+            int a=(int)10.2;
+            int b=(int)12.8;
+            int c=a+b;
+             Console.WriteLine(c);
+          */
+          
+         /*
+          double e=10.6;//natural type
+          // if you run this code the line below will give an error
+          //because you did not explicitly state it was a float by adding f to the codd
+          float t=12.4;
+          //modified version
+          //float t=12.4f;
+          double f=e+t;
+          Console.WriteLine(f);
+          */
+          
+          /*
+          decimal d=12.3M;
+          decimal g=10.7M;
+          decimal h=d+g;
+          Console.WriteLine($"{h}");
+          */
+          
+        }
+
+        
+    }
+}
+*/
+--------------------------------------------------------------------------------------------------------------------------------------------
+//Branching, Ifs, and Conditional Logic (Part 9 of 19) | C# for Beginners
+/*
 
 */
