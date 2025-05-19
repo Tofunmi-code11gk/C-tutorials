@@ -187,5 +187,55 @@ namespace HelloWorld
 --------------------------------------------------------------------------------------------------------------------------------------------
 //Branching, Ifs, and Conditional Logic (Part 9 of 19) | C# for Beginners
 /*
+using System;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+        int a=6;
+        int b=10;
+        int c=a+b;
+        // A data type that stores only true or false
+        bool myTest=c>10;
+        /*
+        if(myTest)
+          {
+            Console.WriteLine("it is greater than 10");   
+          }
+        //otherwise
+        else
+          {
+            Console.WriteLine("it is less than 10");
+          }
+          */
+        //we modify the if statment by adding these operators'&&' '||'
+        if((a+b>10) &&(a==b))
+        //only works if both conditions are true
+          {
+             Console.WriteLine("it is greater than 10");
+              Console.WriteLine("a is the same as b");
+          }
+        if((a+b>10) || (a==b))//only works if one is true
+          {
+             Console.WriteLine("a is the same as b or a+b>10");
+          }
+        else{
+          Console.WriteLine("nothing");
+        }
+
+        
+        }
+    }    
+}
+
+*/
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+//
+/*
+
 
 */
