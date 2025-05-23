@@ -353,3 +353,110 @@ namespace HelloWorld
 
 
 */
+--------------------------------------------------------------------------------------------------------------------------------------------
+//Sorting and Searching Lists (Part 14 of 19) | C# for Beginners
+/*using System;
+using System. Collections.Generic;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          var names=new List<string>{"Scott","Anna","David"};
+          names.Add("Luke");
+          names.Add("JOhn");
+          names.Add("Paul");
+          names.Add("Jake");
+          names.Add("Russ");
+        
+          
+          foreach(var name in names[2..4])
+            {
+              Console.WriteLine($"\n{name.ToUpper()}");
+            }
+          
+    }    
+}
+}
+*/
+--------------------------------------------------------------------------------------------------------------------------------------------
+//Language Integrated Query (LINQ) and IEnumerable (Part 15 of 19) | C# for Beginners
+/*
+using System;
+using System. Collections.Generic;
+using System.Linq;
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          var numbers=new List<int>{70,59,81,28,99,87};
+          Console.WriteLine($"I found 70 at index{numbers.IndexOf(70)}");
+          numbers.Sort();
+          Console.WriteLine($"I found 70 at index{numbers.IndexOf(70)}");
+         
+         //List<int> scores=[87,98,80,100];
+          List<int> scores = new List<int> { 87, 98, 80, 100 };
+
+         IEnumerable<int> scorequery=
+           from score in scores
+           where score>80
+           select score;
+           
+         foreach(int i in scorequery)
+         {
+           Console.WriteLine(i+" ");
+         }
+    }    
+}
+}
+
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------
+//LINQ Query Expressions From, Where, Orderby, and Select (Part 16 of 19) | C# for Beginners
+/*
+using System;
+using System. Collections.Generic;
+using System.Linq;
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+          var numbers=new List<int>{70,59,81,28,99,87};
+          Console.WriteLine($"I found 70 at index{numbers.IndexOf(70)}");
+          numbers.Sort();
+          Console.WriteLine($"I found 70 at index{numbers.IndexOf(70)}");
+         
+         //List<int> scores=[87,98,80,100];
+          List<int> scores = new List<int> {  98, 87, 80, 100 };
+
+         IEnumerable<string> scorequery=
+           from score in scores
+           where score>80
+           orderby score descending
+           select $"{score}";
+           
+         foreach(string i in scorequery)
+         {
+           Console.WriteLine(i);
+         }
+    }    
+}
+}
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------
+//LINQ Method Syntax vs Query (Part 17 of 19) | C# for Beginners
+/*
+
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------
+//Object-oriented Programming (OOP) (Part 18 of 19) | C# for Beginners
+/*
+
+*/
+-------------------------------------------------------------------------------------------------------------------------------------------
